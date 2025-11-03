@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gracias por tu compra</title>
+    <style>
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 20px !important;
+            }
+
+            h1 {
+                font-size: 24px !important;
+            }
+
+            p {
+                font-size: 16px !important;
+            }
+
+            img {
+                width: 100% !important;
+                height: auto !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #121212; font-family: Arial, sans-serif;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #121212; padding: 40px; color: #ffffff;"
+        class="container">
+        <h1 style="color: #d4b178; font-size: 28px; margin-bottom: 20px;">
+            ¡Hola {{3.data.transaction.customer_data.full_name}}!
+        </h1>
+
+        <p style="color: #ffffff; font-size: 18px; line-height: 1.6;">
+            Gracias por tu compra del e-book <strong style="color: #d4b178;">"El Código del Alto Valor"</strong>.
+        </p>
+
+        <div style="text-align: center; margin: 30px 0;">
+            <img src="https://codigodealtovalor.vercel.app/_next/image?url=%2Fimages%2Fportada.png&w=640&q=75"
+                alt="Portada del libro" width="300"
+                style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);" />
+        </div>
+
+        <p style="color: #ffffff; font-size: 18px; line-height: 1.6;">
+            Te adjuntamos el PDF del libro en este correo para que lo descargues y lo empieces a leer cuando quieras.
+        </p>
+
+        <p style="color: #ffffff; font-size: 18px; line-height: 1.6;">
+            ¡Disfrútalo y sigue creciendo!
+        </p>
+
+        <hr style="margin: 40px 0; border: none; border-top: 1px solid #333;" />
+
+        <p style="color: #999999; font-size: 14px; text-align: center;">
+            © 2025 BotServices. Todos los derechos reservados.
+        </p>
+    </div>
+</body>
+
+</html>
