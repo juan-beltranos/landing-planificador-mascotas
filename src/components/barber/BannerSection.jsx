@@ -31,9 +31,7 @@ const BannerSection = () => {
               <small className="text-black-dark">
                 📩 Descarga inmediata después de la compra.
               </small>
-              <p className="text-black-dark">
-                🔒 Pagos 100% seguros con Wompi (Bancolombia)
-              </p>
+              <p className="text-black-dark">🔒 Pagos 100% seguros con Wompi</p>
               <Image
                 src="/images/metodo-wompi.jpg"
                 alt="Método de pago Wompi seguro"
@@ -65,7 +63,7 @@ const BannerSection = () => {
           </div>
 
           <div className="bg-orange p-1 shadow-lg text-center w-full max-w-sm">
-            <h3 className="text-4xl font-bold">+500 Tutores Felices</h3>
+            <h3 className="text-4xl font-bold">+120 familias</h3>
             <p className="text-xl mt-2">
               Ya están organizando mejor la salud y cuidados de sus peluditos
               🐶🐱
