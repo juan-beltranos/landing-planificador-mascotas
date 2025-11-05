@@ -34,6 +34,17 @@ const GraciasPage = () => {
 
         if (result.approved) {
           setApproved(true);
+          fbq(
+            "track",
+            "Purchase",
+            {
+              value: result.amount_in_cents / 100,
+              currency: "COP",
+            },
+            {
+              eventID: result.reference,
+            }
+          );
         } else {
           setError(true);
         }

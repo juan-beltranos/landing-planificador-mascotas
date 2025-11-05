@@ -19,9 +19,19 @@ export async function POST(req) {
         }
 
         const data = await response.json();
-        const isApproved = data?.data?.status === "APPROVED";
+        const transaction = data?.data;
 
-        return NextResponse.json({ approved: isApproved }, { status: 200 });
+        const isApproved = transaction?.status === "APPROVED";
+
+        return NextResponse.json(
+            {
+                approved: isApproved,
+                reference: transaction?.reference,
+                amount_in_cents: transaction?.amount_in_cents,
+            },
+            { status: 200 }
+        );
+
     } catch (error) {
         console.error("❌ Error en check-transaction:", error);
         return NextResponse.json(
