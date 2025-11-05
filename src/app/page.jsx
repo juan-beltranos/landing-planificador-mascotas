@@ -33,7 +33,7 @@ export const metadata = {
     title: "Planificador para Mascotas — PDF Imprimible",
     description:
       "Organiza la salud, cuidados y momentos especiales de tu mascota. Ideal para perros y gatos. Descarga inmediata.",
-    url: "https://tu-dominio.com",
+    url: "https://planificadordemascotas.vercel.app",
     siteName: "Planificador para Mascotas",
     images: [
       {
@@ -54,7 +54,7 @@ export const metadata = {
     images: ["/images/portada.png"],
     creator: "@tumarca",
   },
-  metadataBase: new URL("https://tu-dominio.com"),
+  metadataBase: new URL("https://planificadordemascotas.vercel.app"),
 };
 
 // ✅ Actualizamos los títulos del listado de secciones
