@@ -7,16 +7,22 @@ import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import LocalePage from "@/components/home/LocalePage";
 import FloatingWhatsApp from "@/components/barber/FloatingWhatsApp";
 import Script from "next/script";
+import { initFacebookPixel } from "@/lib/fbpixel";
+import { useEffect } from "react";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
+  useEffect(() => {
+    initFacebookPixel("807603868337185");
+  }, []);
+
   return (
     <GoogleReCaptchaProvider
       reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
     >
       <html lang="es-co">
-        <Script
+        {/* <Script
           id="fb-pixel"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -33,7 +39,7 @@ export default function RootLayout({ children }) {
           fbq('track', 'PageView');
         `,
           }}
-        />
+        /> */}
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-GMC6C2XWDQ"
