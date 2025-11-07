@@ -29,7 +29,7 @@ const BannerSection = () => {
 
             <div className="flex flex-col items-center justify-center">
               <small className="text-black-dark">
-                📩 Descarga inmediata después de la compra.
+                📩 Recíbelo automáticamente en tu correo al completar la compra.
               </small>
               <p className="text-black-dark">🔒 Pagos 100% seguros con Wompi</p>
               <Image
