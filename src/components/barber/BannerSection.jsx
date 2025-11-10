@@ -42,6 +42,10 @@ const BannerSection = () => {
               />
             </div>
 
+            <p className="text-center">
+              ¿No puedes pagar con Wompi? Escríbenos al WhatsApp para pagar por
+              Nequi, Bancolombia o cualquier medio de pago. 💬
+            </p>
             <Link
               href="#capitulos"
               className="w-full border border-pribg-primary text-pribg-primary px-6 py-3 text-black-dark rounded-xl text-xl font-medium flex justify-center items-center text-center hover:bg-primary-dark hover:text-black-dark transition"

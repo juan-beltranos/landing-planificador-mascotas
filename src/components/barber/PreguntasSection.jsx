@@ -31,17 +31,7 @@ const faqs = [
   {
     question: "¿Cómo lo recibo después de pagar?",
     answer:
-      "Una vez realizado el pago, el archivo se envía automáticamente a tu correo electrónico 📩.",
-  },
-  {
-    question: "¿Puedo usarlo para más de una mascota?",
-    answer:
-      "¡Claro! Como es imprimible, puedes hacer una copia para cada peludito que tengas 🐾",
-  },
-  {
-    question: "¿Se puede editar digitalmente?",
-    answer:
-      "Sí, puedes usar aplicaciones que permiten escribir sobre archivos PDF, pero se recomienda imprimirlo para un uso más práctico y visual.",
+      "Una vez realizado el pago, el archivo se envía automáticamente a tu correo electrónico 📩. Si no lo ves, revisa tu bandeja de spam o correo no deseado.",
   },
 ];
 
